@@ -111,7 +111,7 @@ public class Main {
                         System.out.print("Nume student: ");
                         String studentName = scanner.nextLine().trim();
 
-                        // Afișăm valorile enum-ului dinamic
+                        
                         String subjectsList = Arrays.toString(Subject.values()).replaceAll("[\\[\\]]", "");
                         System.out.print("Materie (" + subjectsList + "): ");
 

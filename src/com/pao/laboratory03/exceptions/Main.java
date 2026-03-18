@@ -122,7 +122,6 @@ public class Main {
             throw new InvalidAgeException("Varsta " + age + " nu este valida (0-150)");
         }
     }
-
     private static void addToList(List<String> list, String name) {
         if (list.contains(name)) {
             throw new DuplicateEntryException("'" + name + "' exista deja în lista");
