@@ -160,5 +160,3 @@ public class Main {
         // Nu ai subpachete impuse — organizează cum consideri
     }
 }
-
-

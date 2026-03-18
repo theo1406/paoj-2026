@@ -53,4 +53,3 @@ public class Main {
         // Hint: creează mai întâi fișierul Priority.java în acest pachet
     }
 }
-
