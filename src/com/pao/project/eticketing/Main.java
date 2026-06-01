@@ -5,6 +5,7 @@ import com.pao.project.eticketing.exception.EventSoldOutException;
 import com.pao.project.eticketing.model.*;
 import com.pao.project.eticketing.service.ClientService;
 import com.pao.project.eticketing.service.EventService;
+import com.pao.project.eticketing.service.AuditService;
 
 import java.time.LocalDateTime;
 import java.util.Scanner;
@@ -27,7 +28,10 @@ public class Main {
                 switch (optiune) {
                     case "1" -> adaugaLocatie();
                     case "2" -> adaugaEveniment();
-                    case "3" -> adaugaClient();
+                    case "3" -> {
+                        adaugaClient();
+                        AuditService.getInstance().logAction("adauga_client");
+                    }
                     case "4" -> afiseazaLocatii();
                     case "5" -> afiseazaClienti();
                     case "6" -> afiseazaEvenimenteSortate();
